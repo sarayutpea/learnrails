@@ -1,0 +1,53 @@
+use terminal
+
+$ irb
+or
+$ irb --simple-prompt
+
+$ 4+2
+>> 6
+
+$ 4-2
+>> 2
+
+$ 4*2
+>> 6
+
+$ 4/2
+>> 2
+
+$ 4%2
+>> 0
+
+$ (4+2).to_s
+>> "6"
+
+$ (4+2).to_f
+>> 6.00
+
+$ (4.2).to_i
+>> 6
+
+$ 4 == 2
+>> false
+
+$ 4 == 4
+>> true
+
+$ 4 > 2
+>> true
+
+$ 4 < 2
+>> false
+
+$ "text".upcase
+>> "TEXT"
+
+$ "texT".downcase
+>> "text"
+
+$ "tExT".swapcase
+>> "TeXt"
+
+$ "text" * 4
+>> "texttexttexttext"

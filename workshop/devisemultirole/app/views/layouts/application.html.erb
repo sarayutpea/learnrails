@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Devisemultirole</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<div class="container">
+  <%= link_to('Register', new_member_registration_path, class:'btn btn-warning') %>
+  <%= link_to('Sign in', new_member_session_path, class:'btn btn-success') %>
+  <%= link_to('Sign out', destroy_member_session_path, class:'btn btn-danger', :method => :delete) %>
+  <%= link_to('Profile', edit_member_registration_path, class:'btn btn-primary') %>
+  <%= yield %>  
+</div>
+
+
+</body>
+</html>

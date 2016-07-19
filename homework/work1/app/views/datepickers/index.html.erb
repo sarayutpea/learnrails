@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Datepickers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @datepickers.each do |datepicker| %>
+      <tr>
+        <td><%= datepicker.day %></td>
+        <td><%= link_to 'Show', datepicker %></td>
+        <td><%= link_to 'Edit', edit_datepicker_path(datepicker) %></td>
+        <td><%= link_to 'Destroy', datepicker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Datepicker', new_datepicker_path %>

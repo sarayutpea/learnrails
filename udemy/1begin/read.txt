@@ -1,0 +1,10 @@
+Class 
+ 
+public access
+    the mothod is available any where the ibject is available. this is the default
+    
+protected access
+    the method is only available whitin the class defination and the defination of any subclass
+
+private access
+    the method has protected access, but cannot be called whit an axplitcit receiver.

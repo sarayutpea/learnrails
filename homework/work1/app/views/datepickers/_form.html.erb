@@ -1,0 +1,26 @@
+<%= form_for(@datepicker) do |f| %>
+  <% if @datepicker.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@datepicker.errors.count, "error") %> prohibited this datepicker from being saved:</h2>
+
+      <ul>
+      <% @datepicker.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :day %><br>
+  </div>
+    <%= f.text_field :day, :data => {:provide => 'datepicker', :format => "dd/mm/yyyy"} %><br>
+    
+    
+  <!--<input type="text" data-provide='datepicker' >-->
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+
